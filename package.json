@@ -1,0 +1,45 @@
+{
+  "name": "nextatlas_full_stack",
+  "version": "1.0.0",
+  "description": "Nextatlas Assignment for Full-stack developer position",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "start": "npm run build && babel-node server.js",
+    "client": "webpack --mode development --watch --devtool inline-source-map --hot",
+    "server": "nodemon --exec babel-node server.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [
+    "React",
+    "Node.js",
+    "Express",
+    "Full-stack development"
+  ],
+  "author": "Armenuhi Abramyan",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "d3": "^5.9.2",
+    "express": "^4.17.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/node": "^7.4.5",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "concurrently": "^4.1.0",
+    "css-loader": "^3.0.0",
+    "node-sass": "^4.12.0",
+    "nodemon": "^1.19.1",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.34.0",
+    "webpack-cli": "^3.3.4"
+  }
+}

@@ -1,0 +1,89 @@
+
+$mainColor: #344563;
+$bgColor:white;
+$lightGray: #EBEBEB;
+$lineColor: #00C7E5;
+
+.DataPreview {
+    overflow: hidden;
+}
+table {
+    width:100%;
+    background-color: $bgColor;
+    margin:10px 0;
+    text-align: left;
+    border-collapse: collapse;
+    thead th{
+        color:$bgColor;
+        background-color: $mainColor;
+        text-align: center;
+        padding:10px;
+    }
+    tbody tr {
+        &:nth-child(odd) {
+            background-color: $lightGray;
+        } 
+    }
+    th, td {
+        border: 1px solid #CCC;
+        padding:5px;
+        vertical-align: middle;
+        span {
+            word-break:break-all;
+            white-space: normal; 
+        }
+    }
+}
+
+svg {
+    display: block;
+    margin: 10px auto;
+    background-color:$bgColor;
+    color:$mainColor;
+
+    .title {
+        font-weight: bold;
+        font-size:18px;
+    }
+
+    .tltp {
+        display: none;
+        text-align: center;
+        background-color: $bgColor;
+        color:$mainColor;
+        border-style:solid;
+        border:1px solid $mainColor;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+    }
+    .tltp.hovered {
+        display: inline;
+    }
+
+    
+    .dots .dot {
+        fill: $mainColor;
+        stroke: $bgColor;
+        &:hover {
+            r:4;
+            fill: $bgColor;
+            stroke:$mainColor;
+        }
+        
+    }
+    
+}
+.line {
+    fill: none;
+    stroke: $lineColor;
+    stroke-width: 2;
+}
+
+.overlay {
+    fill: none;
+    pointer-events: all;
+}
+
+
+
+
