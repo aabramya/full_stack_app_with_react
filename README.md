@@ -1,10 +1,10 @@
 This project is an assignement for the position of Full-stack developer at Nextatlas
 
 ## Clone the repository
-git clone https://github.com/aabramya/nextatlas_full_stack.git
+git clone https://github.com/aabramya/full_stack_app_with_react.git
 
 ## Go inside the directory
-cd nextatlas_full_stack
+cd full_stack_app_with_react
 
 ## Install dependencies
 npm install
