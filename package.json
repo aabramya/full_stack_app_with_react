@@ -1,7 +1,7 @@
 {
-  "name": "nextatlas_full_stack",
+  "name": "full_stack_app_with_react",
   "version": "1.0.0",
-  "description": "Nextatlas Assignment for Full-stack developer position",
+  "description": "Assignment project for a Full-stack developer position",
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode production",
